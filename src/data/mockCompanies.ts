@@ -1,0 +1,152 @@
+import { Company } from '../types';
+
+export const INITIAL_COMPANIES: Company[] = [
+  {
+    id: 'group-1',
+    grade: '6',
+    classNum: '1',
+    groupNum: '1',
+    studentNames: '민준, 서연, 지후, 하은',
+    companyName: '육즙팡팡 버거랩',
+    productName: '100% 한우 스테이크 메가버거',
+    investments: {
+      tasteQuality: 45,
+      design: 15,
+      service: 10,
+      priceCompetitiveness: 10,
+      advertising: 20,
+    },
+    reasons: {
+      tasteQuality: '신선한 1등급 한우와 유기농 채소로 한 번 먹으면 절대 잊을 수 없는 맛을 만들기 위해서입니다.',
+      design: '깔끔하고 햄버거가 먹음직스럽게 보이는 친환경 종이 패키지를 사용했습니다.',
+      service: '모바일 주문이 쉽도록 키오스크 시스템을 구축했습니다.',
+      priceCompetitiveness: '좋은 재료를 쓴 만큼 파격 할인은 어렵지만 세트 음료를 덤으로 제공합니다.',
+      advertising: '유명 먹방 유튜버와 협업하여 진짜 맛있는 햄버거임을 증명하고자 했습니다.',
+      mainFocusReason: '음식점의 기본은 결국 맛과 품질이라고 생각했기 때문에 맛·품질에 가장 많은 45만 원을 투자했습니다.'
+    },
+    mainFocus: 'tasteQuality',
+    price: 7500,
+    costPerUnit: 3400,
+    customization: {
+      bun: 'brioche',
+      patty: 'beef',
+      toppings: ['cheese', 'lettuce_tomato', 'onion'],
+      sauce: '트러플특제',
+      packaging: 'gold_box',
+      adModel: 'food_youtuber',
+      adSlogan: '한 입 베어무는 순간 터지는 프리미엄 육즙의 향연!'
+    },
+    createdAt: Date.now() - 1000 * 60 * 60 * 2,
+  },
+  {
+    id: 'group-2',
+    grade: '6',
+    classNum: '1',
+    groupNum: '2',
+    studentNames: '도윤, 예은, 시우, 수아',
+    companyName: '착한가격 반값버거',
+    productName: '학생지갑 지킴이 통살치킨버거',
+    investments: {
+      tasteQuality: 20,
+      design: 10,
+      service: 15,
+      priceCompetitiveness: 45,
+      advertising: 10,
+    },
+    reasons: {
+      tasteQuality: '국내산 닭가슴살을 바삭하게 튀겨 기본에 충실한 맛을 냈습니다.',
+      design: '불필요한 포장 비용을 줄여 단가를 낮추기 위해 심플한 크라프트지를 선택했습니다.',
+      service: '학생증 제시 시 감자튀김 무료 쿠폰을 지급하는 서비스를 도입했습니다.',
+      priceCompetitiveness: '친구들이 용돈으로 부담 없이 사먹을 수 있도록 45만 원을 투자해 역대급 할인을 적용했습니다.',
+      advertising: '학교 앞 포스터와 SNS 챌린지를 통해 적은 비용으로 홍보했습니다.',
+      mainFocusReason: '초등학생 소비자는 용돈이 부족하므로 가성비가 가장 강력한 무기라고 생각하여 가격 경쟁력에 45만 원을 투자했습니다.'
+    },
+    mainFocus: 'priceCompetitiveness',
+    price: 4500,
+    costPerUnit: 2300,
+    customization: {
+      bun: 'sesame',
+      patty: 'chicken',
+      toppings: ['cheese', 'lettuce_tomato', 'pickle'],
+      sauce: '달콤바베큐',
+      packaging: 'kraft',
+      adModel: 'cute_mascot',
+      adSlogan: '용돈 걱정 끝! 바삭하고 든든한 4,500원의 기적!'
+    },
+    createdAt: Date.now() - 1000 * 60 * 60 * 1.5,
+  },
+  {
+    id: 'group-3',
+    grade: '6',
+    classNum: '1',
+    groupNum: '3',
+    studentNames: '유준, 지아, 건우, 채원',
+    companyName: '슈퍼스타 버거엔터테인먼트',
+    productName: '아이돌픽 스파이시 핫쉬림프버거',
+    investments: {
+      tasteQuality: 20,
+      design: 20,
+      service: 10,
+      priceCompetitiveness: 10,
+      advertising: 40,
+    },
+    reasons: {
+      tasteQuality: '탱글탱글한 통새우와 매콤한 특제 소스로 청소년 입맛을 공략했습니다.',
+      design: '인스타그램에 올리고 싶은 네온 컬러의 힙한 패키지 박스를 제작했습니다.',
+      service: '주문 고객 전원에게 한정판 아이돌 포토카드를 랜덤 증정합니다.',
+      priceCompetitiveness: '친구와 함께 오면 2인 세트 10% 할인 쿠폰을 제공합니다.',
+      advertising: '초등학생들이 가장 좋아하는 대세 아이돌을 광고 모델로 섭외하고 TV/유튜브 광고를 집행했습니다.',
+      mainFocusReason: '아무리 맛있어도 모르면 사먹지 않기 때문에, 가장 핫한 광고와 포토카드 마케팅으로 폭발적인 인기를 얻고자 광고에 40만 원을 투자했습니다.'
+    },
+    mainFocus: 'advertising',
+    price: 6800,
+    costPerUnit: 2700,
+    customization: {
+      bun: 'black_squid',
+      patty: 'shrimp',
+      toppings: ['cheese', 'lettuce_tomato', 'onion'],
+      sauce: '매콤스파이시',
+      packaging: 'retro',
+      adModel: 'top_idol',
+      adSlogan: '대세 아이돌도 반한 통새우의 아찔한 매콤함!'
+    },
+    createdAt: Date.now() - 1000 * 60 * 60,
+  },
+  {
+    id: 'group-4',
+    grade: '6',
+    classNum: '1',
+    groupNum: '4',
+    studentNames: '현우, 다은, 민재, 서아',
+    companyName: '그린에코 힐링키친',
+    productName: '비건 숲속머쉬룸 아보카도버거',
+    investments: {
+      tasteQuality: 25,
+      design: 35,
+      service: 20,
+      priceCompetitiveness: 10,
+      advertising: 10,
+    },
+    reasons: {
+      tasteQuality: '건강한 표고버섯 패티와 숲속 채소로 담백하고 건강한 맛을 살렸습니다.',
+      design: '100% 생분해되는 감성적인 친환경 나뭇잎 디자인 패키지로 브랜드 가치를 높였습니다.',
+      service: '다회용기 포장 고객에게 500원 캐시백을 돌려주는 에코 서비스를 운영합니다.',
+      priceCompetitiveness: '환경 마일리지 적립으로 재방문 시 할인 혜택을 줍니다.',
+      advertising: '환경 보호 캠페인과 함께 착한 소비를 유도하는 잔잔한 웹툰 광고를 진행했습니다.',
+      mainFocusReason: '요즘 소비자들은 가치 소비와 감성적인 비주얼을 중요하게 여기므로 디자인과 친환경 패키지에 35만 원을 투자했습니다.'
+    },
+    mainFocus: 'design',
+    price: 7200,
+    costPerUnit: 3000,
+    customization: {
+      bun: 'regular',
+      patty: 'vegan',
+      toppings: ['lettuce_tomato', 'pickle', 'onion'],
+      sauce: '고소마요',
+      packaging: 'eco_green',
+      adModel: 'kid_hero',
+      adSlogan: '지구도 지키고 입맛도 살리는 착한 한 끼!'
+    },
+    createdAt: Date.now() - 1000 * 60 * 30,
+  }
+];

@@ -1,0 +1,7 @@
+{
+  "name": "우리 회사의 선택! 소비자의 마음을 잡아라! - 6학년 경제 햄버거 마켓",
+  "description": "초등학교 6학년 경제 공개수업을 위한 기업 100만원 예산 투자 및 소비자 햄버거 구매 시장 체험 시뮬레이션",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
